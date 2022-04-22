@@ -1,5 +1,7 @@
-# vuetify2-shopping-cart
-
+# vuetify-shopping-cart
+```
+This is a Vue 2 shopping cart project designed with Vuetify Framework. Other important packages used to make this project are Vuex, and Vue Router.
+```
 ## Project setup
 ```
 npm install

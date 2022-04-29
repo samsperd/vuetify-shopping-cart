@@ -1,5 +1,15 @@
 <template>
     <tr>
+        <td colspan="1">
+            <v-btn
+            color="warning"
+            small
+            icon
+            @click="removeItem(product.id)"
+            >
+                <v-icon small>mdi-close</v-icon>
+            </v-btn>
+        </td>
         <td colspan="4">
             {{ product.name }}
         </td>
@@ -63,6 +73,9 @@ export default {
         },
         decrement() {
             this.$store.commit('removeFromCart', this.product);
+        },
+        removeItem(id) {
+            this.$store.commit('removeItemFromCart', id);
         }
     },
   }

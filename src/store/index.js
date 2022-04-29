@@ -65,8 +65,13 @@ export default new Vuex.Store({
         state.cart = JSON.parse(cart);
       }
     },
-    clearCart(state) {
+    removeItemFromCart(state, id) {
+      
+      state.cart = state.cart.filter(i => i.id !== id);
 
+      updateLocalStorage(state.cart);
+    },
+    clearCart(state) {
       
       const cart = state.cart = [];
 

@@ -7,6 +7,9 @@
           <template v-slot:default>
             <thead>
               <tr>
+                <th colspan="1" class="text-left text-subtitle-1 font-weight-bold">
+                  ~
+                </th>
                 <th colspan="4" class="text-left text-subtitle-1 font-weight-bold">
                   Name
                 </th>
